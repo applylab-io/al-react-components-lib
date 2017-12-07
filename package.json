@@ -8,7 +8,7 @@
     "build:watch": "babel lib -w -d build",
     "lint": "eslint lib/**; exit 0",
     "lint:watch": "esw -w lib/**",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,9 @@
     "url": "https://github.com/applylab-io/react-components-lib/issues"
   },
   "homepage": "https://github.com/applylab-io/react-components-lib#readme",
+  "peerDependencies": {
+    "react": "16.x"
+  },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
